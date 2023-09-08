@@ -131,7 +131,7 @@ def find_client(cur, name=None, surname=None, email=None, phone=None):
 
 if __name__ == '__main__':
     with psycopg2.connect(database="test12", user="postgres",
-                          password="hunas") as conn:
+                          password="%%") as conn:
         with conn.cursor() as curs:
             delete_db(curs)  # - Удаление таблиц перед запуском, закомментируйте это строку после запуска.
 
