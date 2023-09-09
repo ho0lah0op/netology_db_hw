@@ -3,7 +3,7 @@ from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 
 Base = declarative_base()
 
-DSN = "postgresql://postgres:hunas@localhost:5432/book_shop"
+DSN = "postgresql://postgres:***@localhost:5432/book_shop"
 engine = sqlalchemy.create_engine(DSN)
 
 
