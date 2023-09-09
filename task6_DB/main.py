@@ -4,7 +4,7 @@ from models import Publisher, Book, Stock, Sale, Shop
 
 
 def create_session():
-    DSN = "postgresql://postgres:hunas@localhost:5432/book_shop"
+    DSN = "postgresql://postgres:***@localhost:5432/book_shop"
     engine = sqlalchemy.create_engine(DSN)
     Session = sessionmaker(bind=engine)
     return Session()
